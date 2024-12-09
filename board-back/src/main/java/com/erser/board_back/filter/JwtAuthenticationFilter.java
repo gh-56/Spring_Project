@@ -78,7 +78,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter{
     }
 
     /**
-     * HTTP 요청의 Authorization 헤더에서 Bearer 토큰을 추출합니다.
+     * * HTTP 요청의 Authorization 헤더에서 Bearer 토큰을 추출합니다.
      *
      * @param request 클라이언트로부터 받은 HTTP 요청
      * @return Bearer 토큰 문자열, 없을 경우 null

@@ -77,7 +77,6 @@ public class JwtProvider{
         } catch (Exception e) {
             System.err.println("Unexpected error: " + e.getMessage());
         }
-        // JWT가 유효하지 않은 경우 null 반환
         return null;
     }
 }

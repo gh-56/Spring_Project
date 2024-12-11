@@ -85,6 +85,11 @@ public class JwtProvider {
     - 서버가 CORS 설정으로 해당 Origin을 허용하면 요청이 성공.
 
 
+## Spring Security의 기본 동작
+1. Spring은 기본적으로 폼 기반 인증 (사용자명/비밀번호) 방식을 사용한다.
+2. JWT 기반 인증 방식을 사용하면 폼 기반 인증을 우회하기 때문에 UsernamePasswordAuthenticationFilter가 실행되지 않는다.
+3. 따라서 개발자가 직접 UsernamePasswordAuthenticationToken을 생성햐여 JWT에서 추출한 사용자 정보를 Spring Security에 전달해야 한다.
+
 # Spring Security 구성 요약
 
 ## **클래스별 역할**

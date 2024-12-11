@@ -56,7 +56,7 @@ public class WebSecurityConfig {
      * @throws Exception 보안 설정 중 발생할 수 있는 예외
      */
     @Bean
-    SecurityFilterChain configure(HttpSecurity httpSecurity) throws Exception {
+    public SecurityFilterChain configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
             // * CORS 설정
             .cors(cors -> cors
@@ -94,7 +94,7 @@ public class WebSecurityConfig {
      * @return CORS 설정을 적용한 {@link CorsConfigurationSource}
      */
     @Bean
-    protected CorsConfigurationSource corsConfigrationSource(){
+    public CorsConfigurationSource corsConfigrationSource(){
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("*");
         configuration.addAllowedMethod("*");

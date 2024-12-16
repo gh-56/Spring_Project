@@ -1,8 +1,10 @@
 import React from 'react'
 import './style.css';
 
-export default function index() {
+//          component: 메인 화면 컴포넌트          //
+export default function Main() {
+  //          render: 메인 화면 컴포넌트 렌더링          //
   return (
-    <div>index</div>
+    <div>메인 화면</div>
   )
 }
